@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar class="primaryBackground">
+    <ion-title style="color: black;">Iniciar sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="secondaryBackground"> 
+    <div class="titulo">
+        <h1 >Carga <br>Credito</h1>
+      </div> 
+    <div class="imagen">
+        <img class="imagen" src="../../../assets/icon/codigo-qr.png">
+    </div>
+    <div style="text-align: center; color: black; margin-top: 30px; font-size: 20px">
+      <ion-label  position="floating">Correo</ion-label>
+    </div>   
+    <div class="inputs">
+      <ion-input  type="text" name="email"  [(ngModel)]="email" required></ion-input>
+    </div>
+  <div style="margin-top: 15px ; margin-bottom: 30px">
+      <div style="text-align: center; color: black; font-size: 20px">
+        <ion-label  position="floating" >Contraseña</ion-label>
+      </div>
+      <ion-input class="inputs" type="password"  name="password" [(ngModel)]="password" required></ion-input>
+  </div>
+  <ion-row>
+      <ion-col>
+        <ion-item class="itemsBackground">
+          <ion-button fill="outline" class="ingresar" expand="block" (click)="abrirAlert()">Seleccionar Usuario</ion-button>
+          <!-- <ion-label floating>Seleccionar Usuario</ion-label>
+          <ion-select interface="alert" [interfaceOptions]="customAlertOptions" [(ngModel)]="userSelect" name="SelecUser" ok-text="Ok" cancel-text="Cancelar" [selectedText]="userSelect"  (ionChange)="SeleccionUsuario()" >
+            <ion-select-option value="admin">Administrador</ion-select-option>
+            <ion-select-option value="invitado">Invitado</ion-select-option>
+            <ion-select-option value="usuario">Usuario</ion-select-option>
+            <ion-select-option value="anonimo">Anónimo</ion-select-option>
+            <ion-select-option value="tester">Tester</ion-select-option>
+          </ion-select> -->
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-button fill="outline" class="ingresar" expand="block" (click)="Login()">Ingresar</ion-button>
+    
+    
+</ion-content>

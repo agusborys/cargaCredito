@@ -1,0 +1,53 @@
+.inputs{
+    border-radius: 0px 0px 0px 0px;
+    -moz-border-radius: 0px 0px 0px10px;
+    -webkit-border-radius: 0px 0px 0px 0px;
+    border: 0px solid #000000;
+    background-color: whitesmoke; 
+    font-size: 20px  
+}
+.itemsBackground {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    --highlight-height: 0 !important;
+  }
+.ingresar{
+    color: #000000;
+    --border-radius: 0px 0px 0px 0px;
+    width: 200px;
+    height: 50px;
+    //--border-style: 1px solid #2e7d32;   
+    //--background: #2e7d32;
+   // --background-activated:#2e7d32; 
+    --border-color:#387e3b;
+    --background-hover:#387e3b;
+    --background-focused: #387e3b;
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+.imagen{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    // margin-top: 15px;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+  }
+.seleccionarAlert{
+    --background:#c5e1a5 !important;
+    //background-color:#c5e1a5!important;
+    text-align: center;
+    font-weight: bold;
+    border-style: solid;
+    border-color: whitesmoke;
+}
+.titulo{
+  color: black;
+  text-align: center;
+  margin-bottom: 5px;
+  font-family: 'ComfortaaBold';
+
+}

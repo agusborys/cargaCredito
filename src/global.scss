@@ -1,0 +1,117 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+.primaryBackground {
+    background-color: #2e7d32;
+    --background: #2e7d32;
+  }
+.secondaryBackground {
+    background-color: #c5e1a5;//81c784
+    --background: #c5e1a5;
+}
+ion-alert.seleccionarAlert{
+  --background:#c5e1a5 !important;
+  text-align: center;
+  font-weight: bold;
+  border-style: solid;
+  border-color: whitesmoke;
+}
+
+ion-alert.avisoAlert{
+  
+  .alert-head
+  {
+    background-color: #2e7d32;
+    color: white;
+  }
+  .alert-button-group{
+    background-color: #2e7d32;
+    color: black !important;
+    justify-content: center;
+    padding: 6px 6px 6px 18px;
+  }
+  .alert-button{
+    color: black !important;
+    background-color: #c5e1a5;
+    padding: 10px;
+    
+  }
+  .alert-message{
+    color: black !important;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    background-color: #c5e1a5;
+  }
+}
+
+//spinner
+
+.spinner {
+  // position: absolute;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // z-index: 999;
+  --background:#c5e1a5;
+}
+
+.lds-hourglass {
+  display:inline-block ;
+  position: relative;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  //color: #2e7d32;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 6px;
+  box-sizing: border-box;
+  border: 26px solid #2e7d32;//fff
+  border-color: #2e7d32 transparent #2e7d32 transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
