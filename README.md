@@ -10,4 +10,4 @@ créditos.
 - Verificar que el código QR esté almacenado en la base de datos.
 - Agregar un botón para limpiar los créditos cargados del usuario.
 
-![codigos QR](https://raw.github.com/agusborys/cargaCredito/blob/master/QRs.png)
+![](https://github.com/agusborys/cargaCredito/blob/master/QRs.png)
